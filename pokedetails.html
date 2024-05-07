@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Details</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('/home/pratham/Ddrive/node/Pokemon API/pxfuel.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }   
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.833);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .pokemon-details {
+      text-align: center;
+    }
+
+    .pokemon-details img {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+
+    .pokemon-details p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pokémon Details</h1>
+    <div class="pokemon-details">
+      <img src="<%pokepic%>" alt="Pikachu">
+      <p>Name: <%pokemon%></p>
+      <p>Type: <%poketype%></p>
+      <p>Height: <%height%></p>
+      <p>Weight: <%pokeweight%></p>
+    </div>
+  </div>
+</body>
+</html>
